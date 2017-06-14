@@ -15,10 +15,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * method called when increment button clicked
+     * */
+    public void increment(View view) {
+        int quantity = 3;
+        display(quantity);
+    }
+
+    /**
+     * method called when increment button clicked
+     * */
+    public void decrement(View view) {
+        int quantity = 1;
+        display(quantity);
+    }
+
     public void submitOrder(View view) {
         display(1);
         displayPrice(1*5);
     }
+
 
     /**
      * This method displays the given quantity value on the screen.
